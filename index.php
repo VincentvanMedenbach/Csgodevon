@@ -7,7 +7,17 @@
     <script src="jquery.easing.1.3.js" charset="utf-8"></script>
     <link href='http://fonts.googleapis.com/css?family=Gravitas+One&text=1234567' rel='stylesheet' type='text/css'>
     <link href="css/main.css" rel="script" type="text/css">
+    <script> function play(){
+            var audio = new Audio("nigger.wav" ) ;
+            audio.play();
+        }</script>
+
+
     <style>
+        img{
+            width: 100px;
+            height: 100px;
+        }
         ul {
             padding: 0;
             margin: 0;
@@ -174,10 +184,6 @@
                 background-color: aqua;
             }
         }
-        img{
-            width: 100px;
-            height: 100px;
-        }
 
         .winner li {
             -webkit-animation: winnerBox 2s infinite linear;
@@ -221,7 +227,9 @@
             </span></li>
     </ul>
 </div>
-<input type="button" id="playFancy" value="Play">
+<input type="button" id="playFancy" value="Play"><br>
+
+<a href="https://shop.spreadshirt.nl/MegaMinecraftMasters">Onze officiele winkel</a>
 </body>
 <script type="text/javascript" charset="utf-8">
 
@@ -237,6 +245,7 @@
         },
         onWin: function (winCount, winners) {
             // only fires if you win
+            play();
 
             $.each(winners, function () {
                 this.addClass('winner');
@@ -246,7 +255,7 @@
             if (winCount === 1) {
                 //alert('You got ' + winCount + ' 7!!!');
             } else if (winCount > 1) {
-                //alert('You got ' + winCount + ' 7’s!!!');
+                //alert('You got ' + winCount + ' 7â€™s!!!');
             }
 
         }
